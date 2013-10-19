@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c1faa7e-e8ab-4be8-862c-68e59465aa18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloWorld/XYPoint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HelloWorld/XYPoint.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloWorld/Circle.h" afterPath="$PROJECT_DIR$/HelloWorld/Circle.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloWorld/Circle.m" afterPath="$PROJECT_DIR$/HelloWorld/Circle.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloWorld/main.m" afterPath="$PROJECT_DIR$/HelloWorld/main.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelloWorld.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/HelloWorld.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,10 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="2" selection-start="87" selection-end="87" vertical-scroll-proportion="0.3243243" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HelloWorld/main.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="62" selection-start="618" selection-end="618" vertical-scroll-proportion="0.5915493" vertical-offset="255" max-vertical-offset="720">
+            <state line="31" column="62" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
               <folding>
                 <element signature="e#124#157#0" expanded="true" />
               </folding>
@@ -109,6 +114,7 @@
         <option value="$PROJECT_DIR$/HelloWorld/XYPoint.h" />
         <option value="$PROJECT_DIR$/HelloWorld/Circle.h" />
         <option value="$PROJECT_DIR$/HelloWorld/Circle.m" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -125,7 +131,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -271,7 +277,11 @@
       <created>1382154057562</created>
       <updated>1382154057562</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加了XYPoint类...">
+      <created>1382170951573</created>
+      <updated>1382170951573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -279,14 +289,14 @@
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59519726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25225225" sideWeight="0.65694684" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25225225" sideWeight="0.40480274" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34305316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34305316" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -306,7 +316,8 @@
     </option>
     <MESSAGE value="first commit ..." />
     <MESSAGE value="添加了成员变量及getter,setter方法。。" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了成员变量及getter,setter方法。。" />
+    <MESSAGE value="添加了XYPoint类..." />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了XYPoint类..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -376,10 +387,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloWorld/main.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="62" selection-start="618" selection-end="618" vertical-scroll-proportion="0.5915493" vertical-offset="255" max-vertical-offset="720">
+        <state line="31" column="62" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="720">
           <folding>
             <element signature="e#124#157#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="87" selection-end="87" vertical-scroll-proportion="0.3243243" vertical-offset="0" max-vertical-offset="555">
+          <folding />
         </state>
       </provider>
     </entry>
