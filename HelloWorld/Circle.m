@@ -5,6 +5,7 @@
 
 
 #import "Circle.h"
+#import "XYPoint.h"
 
 int sum = 5;
 
@@ -13,6 +14,15 @@ int sum = 5;
 }
 
 //@synthesize redius;
+//@synthesize origin;
+
+- (void)setOrigin:(XYPoint *)pt {
+     origin = pt;
+}
+
+- (XYPoint *)origin {
+    return origin;
+}
 
 - (void)print {
 
