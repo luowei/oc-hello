@@ -17,8 +17,10 @@ int main(int argc, const char * argv[])
         // insert code here...
         NSLog(@"Hello, World!");
 
-        Circle * circle = [[Circle alloc] init];
-        [circle print];
+        Circle *c = [[Circle alloc] init];
+        [c setR:3 andX:4 andy:5];
+        [c print];
+        NSLog(@"allSum : %d",[Circle allNum]);
 
         
     }

@@ -6,16 +6,29 @@
 
 #import "Circle.h"
 
+int sum = 5;
+
 
 @implementation Circle {
-
 }
 
-@synthesize redius;
+//@synthesize redius;
 
 - (void)print {
 
-    NSLog(@"redus is %d:",redius);
+    NSLog(@"redus:%d x:%d y:%d",redius,x,y);
 }
+
+- (void)setR:(int)r andX:(int)x1 andy:(int)y2 {
+    redius=r;
+    x=x1;
+    y=y2;
+
+}
+
++ (int)allNum {
+    return sum;
+}
+
 
 @end
