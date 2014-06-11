@@ -17,6 +17,8 @@
 #import "Person.h"
 #import "Dog.h"
 
+#import "NSString+ReverseString.h"
+
 int main(int argc, const char * argv[])
 {
 
@@ -65,6 +67,12 @@ int main(int argc, const char * argv[])
         }
         [myProtocol printValue:101 andValue:102];
         
+        //-------DemoCategory--------
+        NSLog(@"-------DemoCategory--------");
+        NSString* string = @"苹果电脑，iOS应用开发，维唯为为制作！";
+        NSString* retString = [string reverseString];
+        NSLog(@" ret string is %@",retString);
+        
         //-------DemoDelegate--------
         NSLog(@"-------DemoDelegate--------");
         Person *xiaoLi = [[Person alloc]init];
@@ -73,6 +81,7 @@ int main(int argc, const char * argv[])
         [dog setDelegate:xiaoLi];
         [xiaoLi setDog:dog];
         
+        //----DemoDelegate要持续运行，需要加上这段死循环
         while (1) {
             [[NSRunLoop currentRunLoop]run];
         }

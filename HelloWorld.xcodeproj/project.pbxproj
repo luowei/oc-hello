@@ -15,6 +15,8 @@
 		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
 		EAC238E1194847E600C92F4A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E0194847E600C92F4A /* Dog.m */; };
 		EAC238E41948489C00C92F4A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E31948489C00C92F4A /* Person.m */; };
+		EAC238E81948607700C92F4A /* NSString+ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E71948607700C92F4A /* NSString+ReverseString.m */; };
+		EAC238EB194864AB00C92F4A /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238EA194864AB00C92F4A /* Foo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,10 @@
 		EAC238E0194847E600C92F4A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		EAC238E21948489C00C92F4A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		EAC238E31948489C00C92F4A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EAC238E61948607700C92F4A /* NSString+ReverseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ReverseString.h"; sourceTree = "<group>"; };
+		EAC238E71948607700C92F4A /* NSString+ReverseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReverseString.m"; sourceTree = "<group>"; };
+		EAC238E9194864AB00C92F4A /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		EAC238EA194864AB00C92F4A /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				EAC238D21948450800C92F4A /* DemoBase */,
 				EAC238D31948450800C92F4A /* DemoProtocol */,
 				EAC238DE194847BA00C92F4A /* DemoDelegate */,
+				EAC238E51948601700C92F4A /* DemoCategory */,
 				EA11480218101A8D00176918 /* HelloWorld */,
 				EA1147FF18101A8D00176918 /* Frameworks */,
 				EA1147FE18101A8D00176918 /* Products */,
@@ -143,6 +150,17 @@
 			path = DemoDelegate;
 			sourceTree = "<group>";
 		};
+		EAC238E51948601700C92F4A /* DemoCategory */ = {
+			isa = PBXGroup;
+			children = (
+				EAC238E61948607700C92F4A /* NSString+ReverseString.h */,
+				EAC238E71948607700C92F4A /* NSString+ReverseString.m */,
+				EAC238E9194864AB00C92F4A /* Foo.h */,
+				EAC238EA194864AB00C92F4A /* Foo.m */,
+			);
+			path = DemoCategory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC238E81948607700C92F4A /* NSString+ReverseString.m in Sources */,
 				EAC238E41948489C00C92F4A /* Person.m in Sources */,
 				EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */,
 				EAC238DD1948458900C92F4A /* XYPoint.m in Sources */,
+				EAC238EB194864AB00C92F4A /* Foo.m in Sources */,
 				EAC238E1194847E600C92F4A /* Dog.m in Sources */,
 				EA11480418101A8D00176918 /* main.m in Sources */,
 				EAC238DC1948458900C92F4A /* Circle.m in Sources */,
