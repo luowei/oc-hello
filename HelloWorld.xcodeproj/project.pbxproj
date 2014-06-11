@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEF06026F71D1F39893BE56B /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0609EE18BA4DB01233793 /* XYPoint.m */; };
-		BEF06525C5431166C6F7E478 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF067FE56D4403C1F641A21 /* Circle.m */; };
 		EA11480118101A8D00176918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA11480018101A8D00176918 /* Foundation.framework */; };
 		EA11480418101A8D00176918 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA11480318101A8D00176918 /* main.m */; };
 		EA11480818101A8D00176918 /* HelloWorld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA11480718101A8D00176918 /* HelloWorld.1 */; };
-		EAC238CF19483B1C00C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238CE19483B1C00C92F4A /* MyProtocolTest.m */; };
+		EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D61948454600C92F4A /* MyProtocolTest.m */; };
+		EAC238DC1948458900C92F4A /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D91948458900C92F4A /* Circle.m */; };
+		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,20 +29,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BEF0609EE18BA4DB01233793 /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYPoint.m; path = HelloWorld/XYPoint.m; sourceTree = "<group>"; };
-		BEF067FE56D4403C1F641A21 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = HelloWorld/Circle.m; sourceTree = "<group>"; };
-		BEF06A490FE14148E5191911 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = HelloWorld/Circle.h; sourceTree = "<group>"; };
-		BEF06CD60D1B4E8C43884571 /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYPoint.h; path = HelloWorld/XYPoint.h; sourceTree = "<group>"; };
 		EA1147FD18101A8D00176918 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA11480018101A8D00176918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA11480318101A8D00176918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA11480618101A8D00176918 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		EA11480718101A8D00176918 /* HelloWorld.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloWorld.1; sourceTree = "<group>"; };
-		EAC238CC19483A4B00C92F4A /* MyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
-		EAC238CD19483B1C00C92F4A /* MyProtocolTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocolTest.h; sourceTree = "<group>"; };
-		EAC238CE19483B1C00C92F4A /* MyProtocolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtocolTest.m; sourceTree = "<group>"; };
 		EAC238D01948410B00C92F4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EAC238D11948422600C92F4A /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		EAC238D41948454600C92F4A /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
+		EAC238D51948454600C92F4A /* MyProtocolTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocolTest.h; sourceTree = "<group>"; };
+		EAC238D61948454600C92F4A /* MyProtocolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProtocolTest.m; sourceTree = "<group>"; };
+		EAC238D81948458900C92F4A /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		EAC238D91948458900C92F4A /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		EAC238DA1948458900C92F4A /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		EAC238DB1948458900C92F4A /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				EAC238D01948410B00C92F4A /* README.md */,
-				EAC238CB19483A0400C92F4A /* ProtocolDemo */,
-				EAC238CA1948398900C92F4A /* BaseDemo */,
+				EAC238D21948450800C92F4A /* DemoBase */,
+				EAC238D31948450800C92F4A /* DemoProtocol */,
 				EA11480218101A8D00176918 /* HelloWorld */,
 				EA1147FF18101A8D00176918 /* Frameworks */,
 				EA1147FE18101A8D00176918 /* Products */,
@@ -104,25 +104,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EAC238CA1948398900C92F4A /* BaseDemo */ = {
+		EAC238D21948450800C92F4A /* DemoBase */ = {
 			isa = PBXGroup;
 			children = (
-				BEF067FE56D4403C1F641A21 /* Circle.m */,
-				BEF06A490FE14148E5191911 /* Circle.h */,
-				BEF0609EE18BA4DB01233793 /* XYPoint.m */,
-				BEF06CD60D1B4E8C43884571 /* XYPoint.h */,
+				EAC238D81948458900C92F4A /* Circle.h */,
+				EAC238D91948458900C92F4A /* Circle.m */,
+				EAC238DA1948458900C92F4A /* XYPoint.h */,
+				EAC238DB1948458900C92F4A /* XYPoint.m */,
 			);
-			name = BaseDemo;
+			path = DemoBase;
 			sourceTree = "<group>";
 		};
-		EAC238CB19483A0400C92F4A /* ProtocolDemo */ = {
+		EAC238D31948450800C92F4A /* DemoProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				EAC238CC19483A4B00C92F4A /* MyProtocol.h */,
-				EAC238CD19483B1C00C92F4A /* MyProtocolTest.h */,
-				EAC238CE19483B1C00C92F4A /* MyProtocolTest.m */,
+				EAC238D41948454600C92F4A /* MyProtocol.h */,
+				EAC238D51948454600C92F4A /* MyProtocolTest.h */,
+				EAC238D61948454600C92F4A /* MyProtocolTest.m */,
 			);
-			name = ProtocolDemo;
+			path = DemoProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,10 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */,
+				EAC238DD1948458900C92F4A /* XYPoint.m in Sources */,
 				EA11480418101A8D00176918 /* main.m in Sources */,
-				BEF06525C5431166C6F7E478 /* Circle.m in Sources */,
-				BEF06026F71D1F39893BE56B /* XYPoint.m in Sources */,
-				EAC238CF19483B1C00C92F4A /* MyProtocolTest.m in Sources */,
+				EAC238DC1948458900C92F4A /* Circle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
