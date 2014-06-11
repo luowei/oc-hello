@@ -14,13 +14,16 @@
 #import "MyProtocol.h"
 #import "MyProtocolTest.h"
 
+#import "Person.h"
+#import "Dog.h"
+
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        //----- BaseDemo --------
-        NSLog(@"-------------BaseDemo--------");
+        //----- DemoBase --------
+        NSLog(@"-------------DemoBase--------");
         
         NSLog(@"Hello, World!");
 
@@ -41,8 +44,8 @@ int main(int argc, const char * argv[])
 
         NSLog(@"origin at(%i,%i) ",c.origin.x,c.origin.y);
 
-        //-------ProtocolDemo--------
-        NSLog(@"-------ProtocolDemo--------");
+        //-------DemoProtocol--------
+        NSLog(@"-------DemoProtocol--------");
         MyProtocolTest *myProtocolTest = [[MyProtocolTest alloc]init];
         [myProtocolTest showInfo];
         
@@ -62,6 +65,17 @@ int main(int argc, const char * argv[])
         }
         [myProtocol printValue:101 andValue:102];
         
+        //-------DemoDelegate--------
+        NSLog(@"-------DemoDelegate--------");
+        Person *xiaoLi = [[Person alloc]init];
+        Dog *dog = [[Dog alloc]init];
+        [dog setID:10];
+        [dog setDelegate:xiaoLi];
+        [xiaoLi setDog:dog];
+        
+        while (1) {
+            [[NSRunLoop currentRunLoop]run];
+        }
         
     }
     return 0;

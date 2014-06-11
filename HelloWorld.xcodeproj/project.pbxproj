@@ -13,6 +13,8 @@
 		EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D61948454600C92F4A /* MyProtocolTest.m */; };
 		EAC238DC1948458900C92F4A /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D91948458900C92F4A /* Circle.m */; };
 		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
+		EAC238E1194847E600C92F4A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E0194847E600C92F4A /* Dog.m */; };
+		EAC238E41948489C00C92F4A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E31948489C00C92F4A /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		EAC238D91948458900C92F4A /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		EAC238DA1948458900C92F4A /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
 		EAC238DB1948458900C92F4A /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		EAC238DF194847E600C92F4A /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		EAC238E0194847E600C92F4A /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		EAC238E21948489C00C92F4A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EAC238E31948489C00C92F4A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				EAC238D01948410B00C92F4A /* README.md */,
 				EAC238D21948450800C92F4A /* DemoBase */,
 				EAC238D31948450800C92F4A /* DemoProtocol */,
+				EAC238DE194847BA00C92F4A /* DemoDelegate */,
 				EA11480218101A8D00176918 /* HelloWorld */,
 				EA1147FF18101A8D00176918 /* Frameworks */,
 				EA1147FE18101A8D00176918 /* Products */,
@@ -125,6 +132,17 @@
 			path = DemoProtocol;
 			sourceTree = "<group>";
 		};
+		EAC238DE194847BA00C92F4A /* DemoDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EAC238DF194847E600C92F4A /* Dog.h */,
+				EAC238E0194847E600C92F4A /* Dog.m */,
+				EAC238E21948489C00C92F4A /* Person.h */,
+				EAC238E31948489C00C92F4A /* Person.m */,
+			);
+			path = DemoDelegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC238E41948489C00C92F4A /* Person.m in Sources */,
 				EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */,
 				EAC238DD1948458900C92F4A /* XYPoint.m in Sources */,
+				EAC238E1194847E600C92F4A /* Dog.m in Sources */,
 				EA11480418101A8D00176918 /* main.m in Sources */,
 				EAC238DC1948458900C92F4A /* Circle.m in Sources */,
 			);
