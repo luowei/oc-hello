@@ -19,13 +19,19 @@
 
 #import "NSString+ReverseString.h"
 
+#import "Human.h"
+#import "Dogo.h"
+
+//定义一个返回值为int,名字为sumBlockT，参数为(int a,int b),的blocks类型
+typedef int (^SumBlockT) (int a,int b);
+
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
         //----- DemoBase --------
-        NSLog(@"-------------DemoBase--------");
+        NSLog(@"\n\n\n-------------DemoBase--------");
         
         NSLog(@"Hello, World!");
 
@@ -47,7 +53,7 @@ int main(int argc, const char * argv[])
         NSLog(@"origin at(%i,%i) ",c.origin.x,c.origin.y);
 
         //-------DemoProtocol--------
-        NSLog(@"-------DemoProtocol--------");
+        NSLog(@"\n\n\n-------DemoProtocol--------");
         MyProtocolTest *myProtocolTest = [[MyProtocolTest alloc]init];
         [myProtocolTest showInfo];
         
@@ -68,13 +74,60 @@ int main(int argc, const char * argv[])
         [myProtocol printValue:101 andValue:102];
         
         //-------DemoCategory--------
-        NSLog(@"-------DemoCategory--------");
+        NSLog(@"\n\n\n-------DemoCategory--------");
         NSString* string = @"苹果电脑，iOS应用开发，维唯为为制作！";
         NSString* retString = [string reverseString];
         NSLog(@" ret string is %@",retString);
         
+        //-------DemoBlocks--------
+        NSLog(@"\n\n\n-------DemoBlocks--------");
+        
+        NSLog(@"\n\n******blocks 示例1 *******");
+        //声明一个返回值void,参数void的blocks变量，变量名为myBlocks，并赋值为NULL
+        void (^myBlocks) (void) = NULL;
+        //给myBlocks赋值
+        myBlocks = ^(void){
+            NSLog(@" in blocks ");
+        };
+        NSLog(@"==before myBlocks==");
+        myBlocks();     //执行myBlocks
+        NSLog(@"==after myBlocks==");
+        
+        NSLog(@"\n\n******blocks 示例2 *******");
+        int (^myBlocks2) (int a,int b) = ^(int a,int b){
+            int c = a + b;
+            return c;
+        };
+        NSLog(@"==before myBlocks2==");
+        NSLog(@"myBlocks2(100,200)=%i",myBlocks2(100,200));     //执行myBlocks2
+        NSLog(@"==after myBlocks2==");
+        
+        NSLog(@"\n\n******blocks 示例3 *******");
+        __block int sum = 0 ;  //指定sum为__block变量
+        int (^myBlocks3) (int a,int b) = ^(int a,int b){
+            sum = a + b;
+            return sum;
+        };
+        NSLog(@"sum is %i",myBlocks3(20,30));     //执行myBlocks2
+        
+        NSLog(@"\n\n******blocks 示例4 *******");
+        SumBlockT sumBlocks = ^(int a,int b){
+            return a+b;
+        };
+        NSLog(@"excute sumBlocks:%i",sumBlocks(2,3));
+        
+        NSLog(@"\n\n******blocks 示例5 *******");
+        Human *xiaoming = [[Human alloc]init];
+        Dogo *dogo = [[Dogo alloc]init];
+        [dogo setID:10];
+        [dogo setBarkCallback:^(Dogo* thisDogo, int count) {
+            NSLog(@"~~~~~Human Dogo %d bark %d",[thisDogo ID],count);
+        }];
+        [xiaoming setDogo:dogo];
+        
+        
         //-------DemoDelegate--------
-        NSLog(@"-------DemoDelegate--------");
+        NSLog(@"\n\n\n-------DemoDelegate--------");
         Person *xiaoLi = [[Person alloc]init];
         Dog *dog = [[Dog alloc]init];
         [dog setID:10];

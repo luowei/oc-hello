@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA09CE481949966400CD9DF0 /* Dogo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09CE471949966400CD9DF0 /* Dogo.m */; };
+		EA09CE4B194998AD00CD9DF0 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09CE4A194998AD00CD9DF0 /* Human.m */; };
 		EA11480118101A8D00176918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA11480018101A8D00176918 /* Foundation.framework */; };
 		EA11480418101A8D00176918 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA11480318101A8D00176918 /* main.m */; };
 		EA11480818101A8D00176918 /* HelloWorld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA11480718101A8D00176918 /* HelloWorld.1 */; };
@@ -33,6 +35,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA09CE461949966400CD9DF0 /* Dogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dogo.h; sourceTree = "<group>"; };
+		EA09CE471949966400CD9DF0 /* Dogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dogo.m; sourceTree = "<group>"; };
+		EA09CE49194998AD00CD9DF0 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		EA09CE4A194998AD00CD9DF0 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		EA1147FD18101A8D00176918 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA11480018101A8D00176918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA11480318101A8D00176918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA09CE4519498AF100CD9DF0 /* DemoBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				EA09CE461949966400CD9DF0 /* Dogo.h */,
+				EA09CE471949966400CD9DF0 /* Dogo.m */,
+				EA09CE49194998AD00CD9DF0 /* Human.h */,
+				EA09CE4A194998AD00CD9DF0 /* Human.m */,
+			);
+			path = DemoBlocks;
+			sourceTree = "<group>";
+		};
 		EA1147F418101A8D00176918 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,7 @@
 				EAC238D31948450800C92F4A /* DemoProtocol */,
 				EAC238DE194847BA00C92F4A /* DemoDelegate */,
 				EAC238E51948601700C92F4A /* DemoCategory */,
+				EA09CE4519498AF100CD9DF0 /* DemoBlocks */,
 				EA11480218101A8D00176918 /* HelloWorld */,
 				EA1147FF18101A8D00176918 /* Frameworks */,
 				EA1147FE18101A8D00176918 /* Products */,
@@ -212,12 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA09CE481949966400CD9DF0 /* Dogo.m in Sources */,
 				EAC238E81948607700C92F4A /* NSString+ReverseString.m in Sources */,
 				EAC238E41948489C00C92F4A /* Person.m in Sources */,
 				EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */,
 				EAC238DD1948458900C92F4A /* XYPoint.m in Sources */,
 				EAC238EB194864AB00C92F4A /* Foo.m in Sources */,
 				EAC238E1194847E600C92F4A /* Dog.m in Sources */,
+				EA09CE4B194998AD00CD9DF0 /* Human.m in Sources */,
 				EA11480418101A8D00176918 /* main.m in Sources */,
 				EAC238DC1948458900C92F4A /* Circle.m in Sources */,
 			);
