@@ -32,6 +32,7 @@ int sum = 5;
 - (void)setR:(int)r andX:(int)x1 andy:(int)y2 {
     redius=r;
     x=x1;
+//    [self setX:x1];
     y=y2;
 
 }

@@ -27,7 +27,7 @@
 
 -(void)updateTimer:(id)arg{
     barkCount++;
-    NSLog(@"~~~~~dogo %d bark count %d",_ID,barkCount);
+    NSLog(@"~~~~~block demo:dogo %d bark count %d",_ID,barkCount);
     
     //给Human汇报一下，调用Human中的blocks
     if(_barkCallback){

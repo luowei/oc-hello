@@ -121,7 +121,7 @@ int main(int argc, const char * argv[])
         Dogo *dogo = [[Dogo alloc]init];
         [dogo setID:10];
         [dogo setBarkCallback:^(Dogo* thisDogo, int count) {
-            NSLog(@"~~~~~Human Dogo %d bark %d",[thisDogo ID],count);
+            NSLog(@"~~~~~block demo:Human Dogo %d bark %d",[thisDogo ID],count);
         }];
         [xiaoming setDogo:dogo];
         
@@ -134,8 +134,9 @@ int main(int argc, const char * argv[])
         [dog setDelegate:xiaoLi];
         [xiaoLi setDog:dog];
         
-        //----DemoDelegate要持续运行，需要加上这段死循环
+        //----主程序要持续运行，需要加上这段死循环
         while (1) {
+            //启动当前主线程RunLoop,当有输入源或Timer消息源时，会让出时间片执行输入或消息任务
             [[NSRunLoop currentRunLoop]run];
         }
         

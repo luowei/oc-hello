@@ -10,7 +10,7 @@
 
 @class Dogo;
 
-typedef void (^BarkCallback)(Dogo *thisDogo,int count);
+//typedef void (^BarkCallback)(Dogo *thisDogo,int count);
 
 @interface Dogo : NSObject{
     int barkCount;
