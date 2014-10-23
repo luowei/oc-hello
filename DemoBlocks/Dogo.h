@@ -10,11 +10,9 @@
 
 @class Dogo;
 
-<<<<<<< .merge_file_SGpK3m
+
 //typedef void (^BarkCallback)(Dogo *thisDogo,int count);
-=======
-typedef void (^BarkCallback)(Dogo *thisDogo,int count);
->>>>>>> .merge_file_vXKcM5
+
 
 @interface Dogo : NSObject{
     int barkCount;

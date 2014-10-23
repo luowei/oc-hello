@@ -16,7 +16,6 @@
 		EA2E64DA19F7EE4D00EE0443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA2E64D819F7EE4D00EE0443 /* InfoPlist.strings */; };
 		EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E319F7EEDB00EE0443 /* BaseTest.m */; };
 		EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E519F8068700EE0443 /* UTF8Test.mm */; };
-		EA2E64E819F808A600EE0443 /* UnicharAndUTF8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E719F808A600EE0443 /* UnicharAndUTF8.cpp */; };
 		EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D61948454600C92F4A /* MyProtocolTest.m */; };
 		EAC238DC1948458900C92F4A /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D91948458900C92F4A /* Circle.m */; };
 		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
@@ -66,7 +65,6 @@
 		EA2E64DD19F7EE4D00EE0443 /* HelloWorld Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld Tests-Prefix.pch"; sourceTree = "<group>"; };
 		EA2E64E319F7EEDB00EE0443 /* BaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
 		EA2E64E519F8068700EE0443 /* UTF8Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UTF8Test.mm; sourceTree = "<group>"; };
-		EA2E64E719F808A600EE0443 /* UnicharAndUTF8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnicharAndUTF8.cpp; sourceTree = "<group>"; };
 		EAC238D01948410B00C92F4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EAC238D11948422600C92F4A /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 		EAC238D41948454600C92F4A /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 				EA2E64E319F7EEDB00EE0443 /* BaseTest.m */,
 				EA2E64D619F7EE4D00EE0443 /* Supporting Files */,
 				EA2E64E519F8068700EE0443 /* UTF8Test.mm */,
-				EA2E64E719F808A600EE0443 /* UnicharAndUTF8.cpp */,
 			);
 			path = "HelloWorld Tests";
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 			files = (
 				EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */,
 				EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */,
-				EA2E64E819F808A600EE0443 /* UnicharAndUTF8.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +517,7 @@
 				EA2E64E119F7EE4D00EE0443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

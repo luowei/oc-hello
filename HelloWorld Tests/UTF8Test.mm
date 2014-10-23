@@ -111,9 +111,9 @@ uint32 UTF8StrToUnicode( const char* utf8String, uint32 utf8StringLength, wchar_
             
 			if ( outUnicodeString )
 			{
-				wchar_t& WideChar = outUnicodeString[uniIndex];
+				wchar_t& wideChar = outUnicodeString[uniIndex];
                 
-				WideChar = utf8Char;
+				wideChar = utf8Char;
 			}
             
 			utf8Index++;
@@ -129,9 +129,9 @@ uint32 UTF8StrToUnicode( const char* utf8String, uint32 utf8StringLength, wchar_
             
 			if ( outUnicodeString )
 			{
-				wchar_t& WideChar = outUnicodeString[uniIndex];
-				WideChar  = (utf8String[utf8Index + 0] & 0x3F) << 6;
-				WideChar |= (utf8String[utf8Index + 1] & 0x3F);
+				wchar_t& wideChar = outUnicodeString[uniIndex];
+				wideChar  = (utf8String[utf8Index + 0] & 0x3F) << 6;
+				wideChar |= (utf8String[utf8Index + 1] & 0x3F);
 			}
 			
 			utf8Index += cUTF8CharRequire;
@@ -146,11 +146,11 @@ uint32 UTF8StrToUnicode( const char* utf8String, uint32 utf8StringLength, wchar_
             
 			if ( outUnicodeString )
 			{
-				wchar_t& WideChar = outUnicodeString[uniIndex];
+				wchar_t& wideChar = outUnicodeString[uniIndex];
                 
-				WideChar  = (utf8String[utf8Index + 0] & 0x1F) << 12;
-				WideChar |= (utf8String[utf8Index + 1] & 0x3F) << 6;
-				WideChar |= (utf8String[utf8Index + 2] & 0x3F);
+				wideChar  = (utf8String[utf8Index + 0] & 0x1F) << 12;
+				wideChar |= (utf8String[utf8Index + 1] & 0x3F) << 6;
+				wideChar |= (utf8String[utf8Index + 2] & 0x3F);
 			}
 			
             
@@ -166,12 +166,12 @@ uint32 UTF8StrToUnicode( const char* utf8String, uint32 utf8StringLength, wchar_
             
 			if ( outUnicodeString )
 			{
-				wchar_t& WideChar = outUnicodeString[uniIndex];
+				wchar_t& wideChar = outUnicodeString[uniIndex];
                 
-				WideChar  = (utf8String[utf8Index + 0] & 0x0F) << 18;
-				WideChar  = (utf8String[utf8Index + 1] & 0x3F) << 12;
-				WideChar |= (utf8String[utf8Index + 2] & 0x3F) << 6;
-				WideChar |= (utf8String[utf8Index + 3] & 0x3F);
+				wideChar  = (utf8String[utf8Index + 0] & 0x0F) << 18;
+				wideChar  = (utf8String[utf8Index + 1] & 0x3F) << 12;
+				wideChar |= (utf8String[utf8Index + 2] & 0x3F) << 6;
+				wideChar |= (utf8String[utf8Index + 3] & 0x3F);
 			}
             
 			utf8Index += cUTF8CharRequire;
@@ -186,13 +186,13 @@ uint32 UTF8StrToUnicode( const char* utf8String, uint32 utf8StringLength, wchar_
             
 			if ( outUnicodeString )
 			{
-				wchar_t& WideChar = outUnicodeString[uniIndex];
+				wchar_t& wideChar = outUnicodeString[uniIndex];
                 
-				WideChar  = (utf8String[utf8Index + 0] & 0x07) << 24;
-				WideChar  = (utf8String[utf8Index + 1] & 0x3F) << 18;
-				WideChar  = (utf8String[utf8Index + 2] & 0x3F) << 12;
-				WideChar |= (utf8String[utf8Index + 3] & 0x3F) << 6;
-				WideChar |= (utf8String[utf8Index + 4] & 0x3F);
+				wideChar  = (utf8String[utf8Index + 0] & 0x07) << 24;
+				wideChar  = (utf8String[utf8Index + 1] & 0x3F) << 18;
+				wideChar  = (utf8String[utf8Index + 2] & 0x3F) << 12;
+				wideChar |= (utf8String[utf8Index + 3] & 0x3F) << 6;
+				wideChar |= (utf8String[utf8Index + 4] & 0x3F);
 			}
             
 			utf8Index += cUTF8CharRequire;
