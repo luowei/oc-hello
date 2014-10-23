@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3C310D58-9EA1-40E8-8111-5C3AEBE8F4A7</string>
+	<string>C0C1E23D-61F3-4D67-8BFF-C4FDFD2E9B1B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HelloWorld</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>831879BD-F6EC-4237-B04C-FE18CDAFE835</key>
-		<string>ssh://code.csdn.net/luowei505050/oc-hello.git</string>
+		<key>0D2A0CB4-E36D-4711-874F-43AA11DBD91B</key>
+		<string>https://github.com/luowei/oc-hello.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HelloWorld.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>831879BD-F6EC-4237-B04C-FE18CDAFE835</key>
+		<key>0D2A0CB4-E36D-4711-874F-43AA11DBD91B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://code.csdn.net/luowei505050/oc-hello.git</string>
+	<string>https://github.com/luowei/oc-hello.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>831879BD-F6EC-4237-B04C-FE18CDAFE835</string>
+	<string>0D2A0CB4-E36D-4711-874F-43AA11DBD91B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>831879BD-F6EC-4237-B04C-FE18CDAFE835</string>
+			<string>0D2A0CB4-E36D-4711-874F-43AA11DBD91B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>oc-hello</string>
 		</dict>

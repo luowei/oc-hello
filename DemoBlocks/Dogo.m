@@ -27,7 +27,11 @@
 
 -(void)updateTimer:(id)arg{
     barkCount++;
+<<<<<<< .merge_file_2jzYX2
     NSLog(@"~~~~~block demo:dogo %d bark count %d",_ID,barkCount);
+=======
+    NSLog(@"~~~~~dogo %d bark count %d",_ID,barkCount);
+>>>>>>> .merge_file_3fuF4D
     
     //给Human汇报一下，调用Human中的blocks
     if(_barkCallback){
