@@ -17,30 +17,30 @@
 //Node* head = NULL;
 
 //创建链表，头结点data=0，next=NULL;
-bool createNodeList(LinkedList head)
+bool createNodeList(LinkedList* head)
 {
-    head = (Node*) malloc(sizeof(Node));
-    if(NULL == head)
+    (*head) = (Node*) malloc(sizeof(Node));
+    if(NULL == (*head))
     {
         return false;
     }
     else
     {
-        head->data = 0;
-        head->next = NULL;
+        (*head)->data = 0;
+         (*head)->next = NULL;
         return true;
     }
 }
 
 //增加节点
-bool addNode(LinkedList head,Node* node)
+bool addNode(LinkedList* head,Node* node)
 {
-    if(NULL == head)
+    if(NULL == (*head))
     {
         return false;
     }
-    Node* p = head->next;
-    Node* q = head;
+    Node* p = (*head)->next;
+    Node* q = (*head);
     while(NULL != p)
     {
         q = p;
@@ -52,13 +52,13 @@ bool addNode(LinkedList head,Node* node)
 }
 
 //删除节点
-bool deleteNode(LinkedList head,int index)
+bool deleteNode(LinkedList* head,int index)
 {
-    if(NULL == head)
+    if(NULL == (*head))
     {
         return false;
     }
-    Node* p = head->next;
+    Node* p = (*head)->next;
     
     int length = 0;
     while(NULL != p)
@@ -73,8 +73,8 @@ bool deleteNode(LinkedList head,int index)
     }
     else
     {
-        Node* q = head;
-        p = head;
+        Node* q = (*head);
+        p = (*head);
         for(int i=0;i<index;i++)
         {
             q = p;
@@ -88,18 +88,18 @@ bool deleteNode(LinkedList head,int index)
 }
 
 //逆序
-void reverseNodeList(LinkedList head)
+void reverseNodeList(LinkedList* head)
 {
-    if(NULL == head)
+    if(NULL == (*head))
     {
         return;
     }
     //如果链表长度为1
-    if(head->next == NULL)
+    if((*head)->next == NULL)
     {
         return;
     }
-    Node* p = head->next;
+    Node* p = (*head)->next;
     Node* q = p->next;
     Node* t = NULL;
     while(NULL != q)
@@ -109,16 +109,16 @@ void reverseNodeList(LinkedList head)
         p = q;
         q = t;
     }
-    head->next->next = NULL;
-    head->next = p;
+    (*head)->next->next = NULL;
+    (*head)->next = p;
 }
 
 //排序(降序)
-void sort(LinkedList head)
+void sort(LinkedList* head)
 {
     //冒泡排序
-    Node* pHead = head;
-    if(head == NULL)
+    Node* pHead = (*head);
+    if((*head) == NULL)
     {
         return;
     }
@@ -132,7 +132,7 @@ void sort(LinkedList head)
     {
         for(pj = pi->next;pj != NULL;pj=pj->next)
         {
-            if(pj->data>pi->data)
+            if(pj->data > pi->data)
             {
                 int tmp = pj->data;
                 pj->data = pi->data;
@@ -142,26 +142,26 @@ void sort(LinkedList head)
     }
 }
 //销毁
-void destroyNodeList(LinkedList head)
+void destroyNodeList(LinkedList* head)
 {
-    if(NULL == head)
+    if(NULL == (*head))
     {
         return;
     }
-    if(NULL == head->next)
+    if(NULL == (*head)->next)
     {
-        free(head);
-        head = NULL;
+        free((*head));
+        (*head) = NULL;
         return;
     }
-    Node* p = head->next;
+    Node* p = (*head)->next;
     while(NULL != p)
     {
         Node* tmp = p;
         p = p->next;
         free(tmp);
     }
-    free(head);
+    free(*head);
     head = NULL;
 }
 

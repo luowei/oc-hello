@@ -31,10 +31,7 @@
     //链表的操作，以有头节点为例，无头节点类似
     LinkedList head;
     
-    //32位机器上指针大小是4个字节(4x8=32),64位机器上8个字节
-    NSLog(@"*******Node size:%lu  Node* size:%lu",sizeof(Node),sizeof(Node*));
-    
-    createNodeList(head);
+    createNodeList(&head);
     
     Node* node1 = (Node*)malloc(sizeof(Node));
     node1->data = 1;
@@ -44,22 +41,22 @@
     node2->data = 2;
     node2->next = NULL;
     
-    addNode(head,node1);
-    addNode(head,node2);
+    addNode(&head,node1);
+    addNode(&head,node2);
     
-    reverseNodeList(head);
+    reverseNodeList(&head);
     
     Node* node3 = (Node*)malloc(sizeof(Node));
     node3->data = 3;
     node3->next = NULL;
     
-    addNode(head,node3);
+    addNode(&head,node3);
     
-    sort(head);
+    sort(&head);
     
-    deleteNode(head,2);
+    deleteNode(&head,2);
     
-    destroyNodeList(head);
+    destroyNodeList(&head);
 }
 
 

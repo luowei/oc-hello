@@ -33,17 +33,17 @@ typedef struct Node
 }Node, *LinkedList;
 
 //创建链表，头结点data=0，next=NULL
-bool createNodeList(LinkedList head);
+bool createNodeList(LinkedList* head);
 //增加节点
-bool addNode(LinkedList head,Node* node);
+bool addNode(LinkedList* head,Node* node);
 //删除节点
-bool deleteNode(LinkedList,int index);
+bool deleteNode(LinkedList*,int index);
 //逆序
-void reverseNodeList(LinkedList);
+void reverseNodeList(LinkedList*);
 //排序(降序)
-void sort(LinkedList);
+void sort(LinkedList*);
 //销毁
-void destroyNodeList(LinkedList);
+void destroyNodeList(LinkedList*);
 
 
 //另外两种逆序方法
