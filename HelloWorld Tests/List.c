@@ -16,7 +16,7 @@
 ////链表的操作，以有头节点为例，无头节点类似
 //Node* head = NULL;
 
-//创建链表，头结点data=0，next=NULL;
+//创建链表，头结点data=0，next=NULL;因为要改变传入参数的地址值,所以要传入LinkedList*指针地址值
 bool createNodeList(LinkedList* head)
 {
     (*head) = (Node*) malloc(sizeof(Node));
@@ -32,15 +32,15 @@ bool createNodeList(LinkedList* head)
     }
 }
 
-//增加节点
-bool addNode(LinkedList* head,Node* node)
+//增加节点；因为不要改变传入参数的内存地址值，所以直接传入LinkedList即可
+bool addNode(LinkedList head,Node* node)
 {
-    if(NULL == (*head))
+    if(NULL == head)
     {
         return false;
     }
-    Node* p = (*head)->next;
-    Node* q = (*head);
+    Node* p = head->next;
+    Node* q = head;
     while(NULL != p)
     {
         q = p;
@@ -264,8 +264,17 @@ LinkedList reverseSinglyLinkedList2(LinkedList list)
 }
 
 
-
-
-
-
+//取得链表的长度，并把链表的长度存储到头结点
+int getLen(LinkedList list)
+{
+    Node* p=list->next;
+    int len=0;
+    while(p){
+        len++;
+        p=p->next;
+    }
+    list->data = len;
+    
+    return list->data;
+}
 

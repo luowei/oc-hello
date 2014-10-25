@@ -13,7 +13,9 @@ int sum = 5;
 @implementation Circle {
 }
 
-//@synthesize redius;
+@synthesize x;
+@synthesize y;
+@synthesize redius;
 //@synthesize origin;
 
 - (void)setOrigin:(XYPoint *)pt {

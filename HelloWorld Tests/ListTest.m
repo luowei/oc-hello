@@ -41,8 +41,8 @@
     node2->data = 2;
     node2->next = NULL;
     
-    addNode(&head,node1);
-    addNode(&head,node2);
+    addNode(head,node1);
+    addNode(head,node2);
     
     reverseNodeList(&head);
     
@@ -50,7 +50,7 @@
     node3->data = 3;
     node3->next = NULL;
     
-    addNode(&head,node3);
+    addNode(head,node3);
     
     sort(&head);
     
@@ -62,9 +62,26 @@
 
 - (void)testListResever
 {
+    LinkedList head;
+    createNodeList(&head);
+    Node* node1 = (Node*)malloc(sizeof(Node));
+    node1->data = 1;
+    node1->next = NULL;
     
-    reverseSinglyLinkedList(NULL);
+    Node* node2 = (Node*)malloc(sizeof(Node));
+    node2->data = 2;
+    node2->next = NULL;
+    
+    addNode(head,node1);
+    addNode(head,node2);
+    
+    printf("list len:%d",getLen(head));
+    
+    head = reverseSinglyLinkedList(head);
+    
+    head = reverseSinglyLinkedList2(head);
 }
+
 
 @end
 

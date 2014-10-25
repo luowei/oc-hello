@@ -23,6 +23,8 @@
 		EAC238E41948489C00C92F4A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E31948489C00C92F4A /* Person.m */; };
 		EAC238E81948607700C92F4A /* NSString+ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238E71948607700C92F4A /* NSString+ReverseString.m */; };
 		EAC238EB194864AB00C92F4A /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238EA194864AB00C92F4A /* Foo.m */; };
+		EAC251D519FBE91D00E959AD /* ANSICTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC251D419FBE91D00E959AD /* ANSICTest.m */; };
+		EAC251D719FBE95600E959AD /* Base.c in Sources */ = {isa = PBXBuildFile; fileRef = EAC251D619FBE95600E959AD /* Base.c */; };
 		EAF7EC4419F8A3880052C067 /* ListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF7EC4319F8A3880052C067 /* ListTest.m */; };
 		EAF7EC4719F8A3FC0052C067 /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = EAF7EC4619F8A3FC0052C067 /* List.c */; };
 		EAF7EC5919F8C32B0052C067 /* StructTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF7EC5819F8C32B0052C067 /* StructTest.m */; };
@@ -85,6 +87,8 @@
 		EAC238E71948607700C92F4A /* NSString+ReverseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReverseString.m"; sourceTree = "<group>"; };
 		EAC238E9194864AB00C92F4A /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
 		EAC238EA194864AB00C92F4A /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+		EAC251D419FBE91D00E959AD /* ANSICTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSICTest.m; sourceTree = "<group>"; };
+		EAC251D619FBE95600E959AD /* Base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base.c; sourceTree = "<group>"; };
 		EAF7EC4319F8A3880052C067 /* ListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTest.m; sourceTree = "<group>"; };
 		EAF7EC4519F8A3EA0052C067 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		EAF7EC4619F8A3FC0052C067 /* List.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = List.c; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				EA2E64E519F8068700EE0443 /* UTF8Test.mm */,
 				EAF7EC4319F8A3880052C067 /* ListTest.m */,
 				EAF7EC5819F8C32B0052C067 /* StructTest.m */,
+				EAC251D419FBE91D00E959AD /* ANSICTest.m */,
 			);
 			path = "HelloWorld Tests";
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			children = (
 				EAF7EC4519F8A3EA0052C067 /* Header.h */,
 				EAF7EC4619F8A3FC0052C067 /* List.c */,
+				EAC251D619FBE95600E959AD /* Base.c */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -306,7 +312,7 @@
 		EA1147F518101A8D00176918 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = luowei;
 				TargetAttributes = {
 					EA2E64D119F7EE4D00EE0443 = {
@@ -365,11 +371,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC251D519FBE91D00E959AD /* ANSICTest.m in Sources */,
 				EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */,
 				EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */,
 				EAF7EC4419F8A3880052C067 /* ListTest.m in Sources */,
 				EAF7EC4719F8A3FC0052C067 /* List.c in Sources */,
 				EAF7EC5919F8C32B0052C067 /* StructTest.m in Sources */,
+				EAC251D719FBE95600E959AD /* Base.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +407,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -432,7 +439,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -479,6 +485,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -506,6 +513,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
