@@ -16,6 +16,7 @@
 		EA2E64DA19F7EE4D00EE0443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA2E64D819F7EE4D00EE0443 /* InfoPlist.strings */; };
 		EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E319F7EEDB00EE0443 /* BaseTest.m */; };
 		EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E519F8068700EE0443 /* UTF8Test.mm */; };
+		EA3F310C19FC87BC00DE901B /* IntvQuestion.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3F310B19FC87BC00DE901B /* IntvQuestion.c */; };
 		EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D61948454600C92F4A /* MyProtocolTest.m */; };
 		EAC238DC1948458900C92F4A /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D91948458900C92F4A /* Circle.m */; };
 		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
@@ -70,6 +71,7 @@
 		EA2E64DD19F7EE4D00EE0443 /* HelloWorld Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld Tests-Prefix.pch"; sourceTree = "<group>"; };
 		EA2E64E319F7EEDB00EE0443 /* BaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
 		EA2E64E519F8068700EE0443 /* UTF8Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UTF8Test.mm; sourceTree = "<group>"; };
+		EA3F310B19FC87BC00DE901B /* IntvQuestion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IntvQuestion.c; sourceTree = "<group>"; };
 		EAC238D01948410B00C92F4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EAC238D11948422600C92F4A /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 		EAC238D41948454600C92F4A /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				EAF7EC4519F8A3EA0052C067 /* Header.h */,
 				EAF7EC4619F8A3FC0052C067 /* List.c */,
 				EAC251D619FBE95600E959AD /* Base.c */,
+				EA3F310B19FC87BC00DE901B /* IntvQuestion.c */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3F310C19FC87BC00DE901B /* IntvQuestion.c in Sources */,
 				EAC251D519FBE91D00E959AD /* ANSICTest.m in Sources */,
 				EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */,
 				EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */,
