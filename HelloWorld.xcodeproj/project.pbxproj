@@ -18,6 +18,9 @@
 		EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E319F7EEDB00EE0443 /* BaseTest.m */; };
 		EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA2E64E519F8068700EE0443 /* UTF8Test.mm */; };
 		EA3F310C19FC87BC00DE901B /* IntvQuestion.c in Sources */ = {isa = PBXBuildFile; fileRef = EA3F310B19FC87BC00DE901B /* IntvQuestion.c */; };
+		EA44313419FE976E0091B18B /* StringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA44313319FE976E0091B18B /* StringTest.m */; };
+		EA44313719FE97C90091B18B /* DSString.c in Sources */ = {isa = PBXBuildFile; fileRef = EA44313619FE97C90091B18B /* DSString.c */; };
+		EA44313819FE97C90091B18B /* DSString.c in Sources */ = {isa = PBXBuildFile; fileRef = EA44313619FE97C90091B18B /* DSString.c */; };
 		EAC238D71948454600C92F4A /* MyProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D61948454600C92F4A /* MyProtocolTest.m */; };
 		EAC238DC1948458900C92F4A /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238D91948458900C92F4A /* Circle.m */; };
 		EAC238DD1948458900C92F4A /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC238DB1948458900C92F4A /* XYPoint.m */; };
@@ -74,6 +77,9 @@
 		EA2E64E319F7EEDB00EE0443 /* BaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
 		EA2E64E519F8068700EE0443 /* UTF8Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UTF8Test.mm; sourceTree = "<group>"; };
 		EA3F310B19FC87BC00DE901B /* IntvQuestion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IntvQuestion.c; sourceTree = "<group>"; };
+		EA44313319FE976E0091B18B /* StringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTest.m; sourceTree = "<group>"; };
+		EA44313519FE97B30091B18B /* DSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSString.h; sourceTree = "<group>"; };
+		EA44313619FE97C90091B18B /* DSString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DSString.c; sourceTree = "<group>"; };
 		EAC238D01948410B00C92F4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EAC238D11948422600C92F4A /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 		EAC238D41948454600C92F4A /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 				EAC238E51948601700C92F4A /* DemoCategory */,
 				EA09CE4519498AF100CD9DF0 /* DemoBlocks */,
 				EA11480218101A8D00176918 /* HelloWorld */,
+				EA44312F19FE96880091B18B /* datastructure */,
 				EA2E64D519F7EE4D00EE0443 /* HelloWorld Tests */,
 				EAF7EC4E19F8ABA20052C067 /* test-c */,
 				EA1147FF18101A8D00176918 /* Frameworks */,
@@ -189,6 +196,7 @@
 		EA2E64D519F7EE4D00EE0443 /* HelloWorld Tests */ = {
 			isa = PBXGroup;
 			children = (
+				EA44313019FE97020091B18B /* datastructure-test */,
 				EAF7EC4819F8A5C60052C067 /* include */,
 				EA2E64D619F7EE4D00EE0443 /* Supporting Files */,
 				EA2E64E319F7EEDB00EE0443 /* BaseTest.m */,
@@ -208,6 +216,23 @@
 				EA2E64DD19F7EE4D00EE0443 /* HelloWorld Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA44312F19FE96880091B18B /* datastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EA44313519FE97B30091B18B /* DSString.h */,
+				EA44313619FE97C90091B18B /* DSString.c */,
+			);
+			name = datastructure;
+			sourceTree = "<group>";
+		};
+		EA44313019FE97020091B18B /* datastructure-test */ = {
+			isa = PBXGroup;
+			children = (
+				EA44313319FE976E0091B18B /* StringTest.m */,
+			);
+			name = "datastructure-test";
 			sourceTree = "<group>";
 		};
 		EAC238D21948450800C92F4A /* DemoBase */ = {
@@ -368,6 +393,7 @@
 				EAC238EB194864AB00C92F4A /* Foo.m in Sources */,
 				EAC238E1194847E600C92F4A /* Dog.m in Sources */,
 				EA09CE4B194998AD00CD9DF0 /* Human.m in Sources */,
+				EA44313719FE97C90091B18B /* DSString.c in Sources */,
 				EA11480418101A8D00176918 /* main.m in Sources */,
 				EAC238DC1948458900C92F4A /* Circle.m in Sources */,
 			);
@@ -385,6 +411,8 @@
 				EA0C0E2F19FDF66700139E9E /* IntvQuestion2.c in Sources */,
 				EAF7EC4719F8A3FC0052C067 /* List.c in Sources */,
 				EAF7EC5919F8C32B0052C067 /* StructTest.m in Sources */,
+				EA44313819FE97C90091B18B /* DSString.c in Sources */,
+				EA44313419FE976E0091B18B /* StringTest.m in Sources */,
 				EAC251D719FBE95600E959AD /* Base.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
