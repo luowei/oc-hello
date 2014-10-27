@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA09CE481949966400CD9DF0 /* Dogo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09CE471949966400CD9DF0 /* Dogo.m */; };
 		EA09CE4B194998AD00CD9DF0 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = EA09CE4A194998AD00CD9DF0 /* Human.m */; };
+		EA0C0E2F19FDF66700139E9E /* IntvQuestion2.c in Sources */ = {isa = PBXBuildFile; fileRef = EA0C0E2E19FDF66700139E9E /* IntvQuestion2.c */; };
 		EA11480118101A8D00176918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA11480018101A8D00176918 /* Foundation.framework */; };
 		EA11480418101A8D00176918 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA11480318101A8D00176918 /* main.m */; };
 		EA11480818101A8D00176918 /* HelloWorld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA11480718101A8D00176918 /* HelloWorld.1 */; };
@@ -59,6 +60,7 @@
 		EA09CE471949966400CD9DF0 /* Dogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dogo.m; sourceTree = "<group>"; };
 		EA09CE49194998AD00CD9DF0 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		EA09CE4A194998AD00CD9DF0 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		EA0C0E2E19FDF66700139E9E /* IntvQuestion2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IntvQuestion2.c; sourceTree = "<group>"; };
 		EA1147FD18101A8D00176918 /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA11480018101A8D00176918 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA11480318101A8D00176918 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -188,8 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				EAF7EC4819F8A5C60052C067 /* include */,
-				EA2E64E319F7EEDB00EE0443 /* BaseTest.m */,
 				EA2E64D619F7EE4D00EE0443 /* Supporting Files */,
+				EA2E64E319F7EEDB00EE0443 /* BaseTest.m */,
 				EA2E64E519F8068700EE0443 /* UTF8Test.mm */,
 				EAF7EC4319F8A3880052C067 /* ListTest.m */,
 				EAF7EC5819F8C32B0052C067 /* StructTest.m */,
@@ -258,6 +260,7 @@
 				EAF7EC4619F8A3FC0052C067 /* List.c */,
 				EAC251D619FBE95600E959AD /* Base.c */,
 				EA3F310B19FC87BC00DE901B /* IntvQuestion.c */,
+				EA0C0E2E19FDF66700139E9E /* IntvQuestion2.c */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				EA2E64E619F8068700EE0443 /* UTF8Test.mm in Sources */,
 				EA2E64E419F7EEDB00EE0443 /* BaseTest.m in Sources */,
 				EAF7EC4419F8A3880052C067 /* ListTest.m in Sources */,
+				EA0C0E2F19FDF66700139E9E /* IntvQuestion2.c in Sources */,
 				EAF7EC4719F8A3FC0052C067 /* List.c in Sources */,
 				EAF7EC5919F8C32B0052C067 /* StructTest.m in Sources */,
 				EAC251D719FBE95600E959AD /* Base.c in Sources */,

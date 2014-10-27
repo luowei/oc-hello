@@ -201,25 +201,25 @@ void LongFormat( long value )
         else printf("0");
         mask >>= 1;
     }
-    print("\n");
+    printf("\n");
     
     //处理符号位
-    print("0x");
+    printf("0x");
     mask = 0xF << ( 8 * sizeof(long) - 4 );
     long tmp = ( value & mask ) >> ( 8 * sizeof(long) - 4 );
     if( tmp < 10 )
-        print(tmp);
+        printf(tmp);
     else
-        print( (char)( 'a' + ( tmp - 10 ) ));
+        printf( (char)( 'a' + ( tmp - 10 ) ));
     //转换为十六进制
     mask = 0xF << ( 8 * sizeof(long) - 8 );
     for( int i=1; i<2*sizeof(long); i++ )
     {
         tmp = ( value & mask ) >> ( 8 * sizeof(long) - 4 * i - 4 );
         if( tmp < 10 )
-            print(tmp);
+            printf(tmp);
         else
-            print( (char)( 'a' + ( tmp - 10 ) ));
+            printf( (char)( 'a' + ( tmp - 10 ) ));
         
         mask >>= 4;
     }
@@ -272,12 +272,6 @@ void GetSubStr( char *strA, char *strB, char *ans )
     *(ans+max) = '\0';
 }
 
-
-typedef struct DbNode
-{
-    int data;
-    struct DbNode *front,*next;
-} DbNode;
 
 //如果成功删除返回真。否则，返回假。
 bool DeleteValue(DbNode *pHead, int target )

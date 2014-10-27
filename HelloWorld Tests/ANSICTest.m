@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+
 #include "Header.h"
 
 @interface ANSICTest : XCTestCase
@@ -91,5 +92,23 @@
     printf("Result is %s \n", r);
 }
 
+-(void)testGoldCoin{
+    
+    int goldCoin[10];
+    int tryCnt = 10000;
+    int successCnt = 0;
+    
+    initRandom();
+    //总共进行tryCnt次实验
+    for( int i=0; i<tryCnt; i++ )
+    {
+        int max = gegenrateGoldCoin( goldCoin, 10 );
+        int choose = takeCoin( goldCoin, 10 );
+        
+        if( max == choose ) successCnt++;
+    }
+    printf(" %f\n",(successCnt * 1.0 / tryCnt));
+    
+}
 
 @end
