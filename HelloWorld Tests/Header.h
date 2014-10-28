@@ -116,6 +116,48 @@ int gegenrateGoldCoin( int *goldCoin, int size );
 //按照给定的策略从房间中拿金币
 int takeCoin( int *goldCoin, int size );
 
+//从正整数序列Q中的每个元素都至少能被正整数a和b中的一个整除的前N项
+void Generate( int a,int b,int N ,int * Q );
+
+//把由大小写组成的字符串的所有小写字母排在大写字母的前面
+void Proc( char *str );
+
+//判断一个自然数是否是某个数的平方
+int IsSquare(int x,int* result);
+
+//给定能随机生成整数1到5的函数，写出能随机生成整数1到7的函数
+int rand7();
+
+//n! 末尾有多少个0
+int zeroCount(int n);
+
+//找出用A中的元素组成一个大于K的最小正整数
+int NearestInt( int target, int *data, int size );
+//用指针的方法，对A数组进行排序
+void arrSort(int* a, int n);
+
+//拷贝src所指的内存内容前n个字节到dest所指的地址上
+void* Memmove( void *dest, const void *src, size_t n );
+
+//求一个整数数组中两两之差绝对值最小的值
+//1.自然穷举
+int countSort(int arr[]);
+
+//2.基于搜索和排序的解法
+void count_sort(int *arr, int len, int *buf, int bfsz);
+void base_sort(int *arr, int len, int n);
+
+//写一个函数，检查字符是否是整数，如果是，返回其整数值。
+bool StrToInt( char *pc, long* value );
+long strtoint(char *str,int length);
+
+//给出一个函数来输出一个字符串的所有排列
+void Exchange( char *px, char *py );
+void PrintStrPermut( char *pstr, char *pbegin );
+void strSort(char* str);
+void PrintStrPermut2( char *pstr );
+
+
 #endif
 
 

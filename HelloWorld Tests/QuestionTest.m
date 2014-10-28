@@ -10,11 +10,11 @@
 
 #include "Header.h"
 
-@interface ANSICTest : XCTestCase
+@interface QuestionTest : XCTestCase
 
 @end
 
-@implementation ANSICTest
+@implementation QuestionTest
 
 - (void)setUp
 {
@@ -110,5 +110,75 @@
     printf(" %f\n",(successCnt * 1.0 / tryCnt));
     
 }
+
+-(void)testGenerate{
+    int Q[6];
+    //找出前6项
+    Generate( 3, 5, 6 ,Q );
+    
+    int exp[6]={3,5,6,9,10,12};
+    XCTAssertTrue(memcmp(Q, exp, sizeof(Q))==0, @"");
+}
+
+-(void)testProc{
+    
+    char data[] = "SONGjianGoodBest";
+    Proc( data );
+    XCTAssertTrue(strcmp(data,"jianoodestONBGGS")==0,@"");
+}
+
+-(void)testIsSquare{
+    int result;
+    int square = IsSquare(225, &result);
+    
+    XCTAssertTrue(square==1 && result==15, @"");
+}
+
+-(void)testNMultiply{
+    int zeroCnt = zeroCount(1024);
+    XCTAssertTrue(zeroCnt==253, @"");
+}
+
+-(void)testNearestInt{
+    int data[] = { 0, 1, 3, 8 };
+    
+//    char a[20];
+//    sprintf(a,"%d",1234);
+//    printf("=====:%s",a);
+    
+    printf("=====:%d",NearestInt( 81, data, 4 ));
+}
+
+-(void)testCountSort{
+    
+    int arr[64], i, md = 0xffff, diff;
+    for(i = 0; i < 64; ++i){
+        arr[i] = rand()&0xffff;
+    }
+    
+//    int distance = countSort(arr);
+//    printf("=====%d",distance);
+    
+    base_sort(arr, 64, 5);
+    for(i = 1; i < 64; ++i){
+        diff = arr[i] - arr[i-1];
+        if(diff == 0){
+            printf("arr[%d] == arr[%d]\n", i, i-1);
+            continue;
+        }
+        if(diff < md){
+            md = diff;
+        }
+    }
+    printf("min = %d\n", md);
+    
+}
+
+
+
+
+
+
+
 
 @end
