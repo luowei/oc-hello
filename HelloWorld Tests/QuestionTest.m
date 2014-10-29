@@ -174,6 +174,30 @@
     
 }
 
+-(void)testDiv{
+    int a = Div(100, 25);
+    XCTAssertTrue(a==4,@"");
+    
+    int b = Div(100, 12);
+    XCTAssertTrue(b==8, @"");
+    
+}
+
+-(void)testGetCount{
+    int pi[] = {3,4,4,5,5,5,6,6,7,7,7,8,9,10,10};
+    int cnt = GetCount(pi, 3, 10, 6);
+    
+    XCTAssertTrue(cnt==2, @"");
+}
+
+-(void)testMaxKSlop{
+    int x[]={1,6,4,2,3};
+    int y[]={2,4,6,11,9};
+    
+    double k = getMaxKSlope(x, y);
+    printf("*** max k:%f",k);
+}
+
 
 
 

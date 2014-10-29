@@ -157,6 +157,18 @@ void PrintStrPermut( char *pstr, char *pbegin );
 void strSort(char* str);
 void PrintStrPermut2( char *pstr );
 
+//实现两个正整数的除法，
+int Div( const int x, const int y );
+
+//在排序数组中，找出给定数字的出现次数
+int GetCount( int *pi, int left, int right, int target );
+
+//获得指针的数据长度
+int getPointLen(void* p,int pSize);
+
+//从点集成获得最大斜率
+double getMaxKSlope(int* x,int* y);
+
 
 #endif
 

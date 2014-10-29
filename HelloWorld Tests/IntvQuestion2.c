@@ -594,5 +594,161 @@ void PrintStrPermut2( char *pstr )
 //    }
 }
 
+/*
+ 编程实现两个正整数的除法，不能用除法操作符。
+ 
+ a/b=x, 即求a里面有多少个b.
+ 
+ 方法一：枚举，b*1，b*2，b*3，…，直到b*x == a 或 b*x < a && b*(x+1) > a，复杂度O( a/b)这样
+ 方法二：
+ 除了x = 1+…+1（x个1相加），x还可以用2的幂的和表示（如4 = 2^2, 7 = 2^2+2+1 ）。不用逐一枚举，类似折半查找。不断划分区间，用区间比较。
+ 不断尝试b*(1<<0)，b*(1<<1)，b*(1<<2)，…，
+ 直到b*(1<<m) < a && b*(1<<m+1) > a，
+ 则从a - b*(1<<m)，然后再重新开始。
+ 
+ */
+
+int Div( const int x, const int y )
+{
+    if( x < y ) return 0;
+    
+    int tmp = x;
+    int ans = 0;
+    
+    while( tmp >= y )
+    {
+        int cnt = 1;
+        while( ( y * cnt ) <= tmp )  cnt <<= 1;
+        
+        cnt >>= 1;
+        ans += cnt;
+        tmp -= y * cnt;
+    }
+    return ans;
+}
 
 
+/*
+ 在排序数组中，找出给定数字的出现次数。比如[1, 2, 2, 2, 3] 中的出现次数是次。
+ 
+ 方法一：直接遍历，首先找到这个数，然后逐一计数，O(n)可完成。
+ 方法二：二分查找，首先找到这个数的第一个，记录其位置。再二分查找，找到这个数的最后一个，记录其位置。最后下边相减，O(lgn)可完成。虽然两次都是二分查找，但还是略微有点区别。
+ 
+ LowerSearch把相等的情况划归到左半部分，所以计算mid时要向下取整。
+ UpperSearch把相等的情况划归到右半部分，所以计算mid时要向上取整。
+ 
+ */
+//target出现的第一个位置
+int LowerSearch( int *pi, int left, int right, int target )
+{
+    while( left < right )
+    {
+        //mid向下取整
+        int mid = ( left + right ) / 2;
+        
+        if( target <= pi[mid] )
+        {
+            right = mid;
+        }
+        else
+        {
+            left = mid + 1;
+        }
+    }
+    return left;
+}
+//target出现的第最后一个位置
+int UpperSearch( int *pi, int left, int right, int target )
+{
+    while( left < right )
+    {
+        //这里mid向上取整
+        int mid = ( left + right + 1 ) / 2;
+        
+        if( target >= pi[mid] )
+        {
+            left = mid;
+        }
+        else
+        {
+            right = mid - 1;
+        }
+    }
+    return left;
+}
+
+int GetCount( int *pi, int left, int right, int target )
+{
+    int first = LowerSearch( pi, left, right, target );
+    int second = UpperSearch( pi, left, right, target );
+    
+    return second-first+1;
+}
+
+/*
+ 平面上N个点，每两个点都确定一条直线，求出斜率最大的那条直线所通过的两个点（斜率不存在的情况不考虑）。时间效率越高越好。
+ 
+ 按照一般的方法，逐个求斜率比较，O(n^2)可完成。有没有更快的方法？有。
+ 
+ 对所有的点按x坐标排序，然后只比较相邻两点的斜率即可。复杂度O( nlgn )。当然，只要有了算法，编程实现很容易，关键是为什么？
+ 我不会严格的证明，只能朴素的理解一下。
+ 
+ 设有三个点A、B、C
+ 如果A、B、C在一条直线上，则斜率相等
+ 如果A、B、C不在一条直线上，则构成三角形ABC。不妨设Xa < Xb < Xc
+ 即按照x坐标排序后，A、B相邻，B、C相邻。也就是说，三角形中AC为最长边。如图，显然Kab和Kbc中至少有个大于Kac.
+ 
+ */
+void swap(int* a,int* b)
+{
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+void ssort(int x[],int y[],int len)
+{
+    for( int i=0;i<len-1;i++)
+    {
+        for(int j=0;j<len-i-1;j++)
+        {
+            if(x[j]>x[j+1])
+            {
+                swap(&x[j],&x[j+1]);
+                swap(&y[j],&y[j+1]);
+            }
+        }
+    }
+}
+
+//获得指针的数据长度
+int getPointLen(void* p,int pSize)
+{
+    if(p==NULL) return 0;
+    char* cp = (char*)p;
+    
+    int i=0;
+    for(;*(cp+i*pSize)!=NULL;i++){
+        printf("****:%d",*(cp+i*pSize));
+    };
+    return i;
+}
+
+//从点集成获得最大斜率
+double getMaxKSlope(int* x,int* y)
+{
+    int len = getPointLen(x,sizeof(int));
+    if(len <2) return 0;
+    ssort(x, y, len);
+    
+//    double a = 0l;
+//    double* max=&a;
+    double max = 0;
+    for(int i = 1;i<len;i++)
+    {
+//        double n = (y[i]-y[i-1])/(x[i]-x[i-1]);
+        double n = (*(y+i)-*(y+i-1))/(*(x+i)-*(x+i-1));
+//        (*max) = (*max) > n ? (*max):n;
+        max = max > n ? max :n;
+    }
+    return max;
+}
